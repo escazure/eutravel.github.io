@@ -29,13 +29,6 @@ nav ul li a {
     font-size: 30px;
 }
 
-.hero {
-    background: #ccc;
-    padding: 80px 20px;
-    text-align: center;
-}
-.hero h2 { font-size: 32px; margin-bottom: 20px; }
-
 .about, .services, .blog, .portfolio, .contact {
     padding: 40px 20px;
 }
@@ -44,14 +37,6 @@ nav ul li a {
     padding: 20px;
     margin: 10px 0;
     border-radius: 6px;
-}
-img { width: 100%; display: block; border-radius: 6px; }
-
-form input, form textarea, form button {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
 }
 
 footer {
