@@ -1,33 +1,73 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+body { font-family: "Verdana", sans-serif; line-height: 1.6; color: #CDB67D; }
 
 header {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    /* justify-content: space-between; */
     align-items: center;
-    height: 150px;
-    background: #eee;
+    height: 60px;
+    background: #F0F0E8;
+    padding: 0 5%;
     width: 100%;
-    box-sizing: border-box;
+
 }
 
-nav ul { 
-    list-style: none; 
-    display: flex; 
-    justify-content: space-between;
+header .logo{
+    justify-content: left;
+    padding-left: 35px;
+    padding-top: 2px;
+    height:100%;
+}
+
+header #navigation{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+header .logo img {
+    width: auto;       
+    max-height: 100%;       
+    display: block;     
+    object-fit: contain;
+}
+
+
+header #navigation #header-nav{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
     align-items: center;
-    width: 100%;
 }
-nav ul li { 
-    text-align: center;
-    width: 150px;
+
+header #navigation #header-nav li a{
+    text-decoration: none;
+    background-color: #F0F0E8 ;
+    color: #205167;
+    font-weight: 200;
 }
-nav ul li a { 
-    color: #fff; 
-    text-decoration: none; 
-    font-size: 30px;
+
+header #plan{
+    position: absolute;
+    right: 10%;
+    background-color: #205167;
+    color: #CDB67D;
+    border: none;
+    border-radius: 2px;
+    cursor: poiner;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
 }
+
+
+
+
+
+
+
 
 .about, .services, .blog, .portfolio, .contact {
     padding: 40px 20px;
@@ -40,8 +80,8 @@ nav ul li a {
 }
 
 footer {
-    background: #111;
-    color: #fff;
+    background: #205167 ;
+    color: #F0F0E8;
     padding: 20px;
     text-align: center;
 }
@@ -51,18 +91,8 @@ footer {
     height: 30px;
     text-align: center;
     font-size: 30px;
-	display:flex;
-	flex-direction:row;	
 }
 
-#navigation {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #111;
-    width: 100%;
-    height: 50px;
-}
 
 #main-page {
     display: flex;
