@@ -1,11 +1,10 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: "Verdana", sans-serif; line-height: 1.6; color: #CDB67D; }
+body { font-family: "Verdana", sans-serif; line-height: 1.6; color: #222; }
 
 header {
     position: relative;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: center;
     height: 60px;
     background: #F0F0E8;
@@ -14,7 +13,7 @@ header {
 
 }
 
-header .logo{
+header #logo{
     justify-content: left;
     padding-left: 35px;
     padding-top: 2px;
@@ -25,14 +24,11 @@ header #navigation{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-
 }
 
-header .logo img {
+header #logo img {
     width: auto;       
     max-height: 100%;       
-    display: block;     
-    object-fit: contain;
 }
 
 
