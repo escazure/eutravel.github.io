@@ -58,6 +58,10 @@ header #plan{
 }
 
 main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
 	width: 100%;
 	height: auto;
 }
