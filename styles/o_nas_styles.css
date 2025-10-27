@@ -66,13 +66,23 @@ main {
 	height: auto;
 }
 
+main #top-image img {
+    width: 100%;
+    height: auto;
+}
+
 main .info-container {
 	display: flex;
 	flex-direction: row;
 }
 
+main .info-container img {
+    height: 500px;
+    margin: 10px;
+}
+
 main .inner-text {
-	
+	margin: 10px;
 }
 
 footer {
