@@ -7,7 +7,7 @@ header {
     flex-direction: row;
     align-items: center;
     height: 60px;
-    background: #F0F0E8;
+    background: #DEC78E;
     padding: 0 5%;
     width: 100%;
 }
@@ -40,7 +40,7 @@ header #navigation #header-nav{
 
 header #navigation #header-nav li a{
     text-decoration: none;
-    background-color: #F0F0E8 ;
+    background-color: #DEC78E ;
     color: #205167;
     font-weight: 200;
 }
@@ -64,6 +64,7 @@ main {
 	gap: 20px;
 	width: 100%;
 	height: auto;
+    background-color: #DEC78E;
 }
 
 main #top-image img {
