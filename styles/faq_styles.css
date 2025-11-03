@@ -1,5 +1,5 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: "Verdana", sans-serif; line-height: 1.6; color: #222; }
+body { font-family: "Verdana", sans-serif; line-height: 1.6; color: #222;  }
 
 header {
     position: absolute;
@@ -7,9 +7,10 @@ header {
     flex-direction: row;
     align-items: center;
     height: 60px;
-    background: #F0F0E8;
+    background: #DEC78E;
     padding: 0 5%;
     width: 100%;
+    flex-grow: 0;
 }
 
 header #logo{
@@ -40,7 +41,7 @@ header #navigation #header-nav{
 
 header #navigation #header-nav li a{
     text-decoration: none;
-    background-color: #F0F0E8 ;
+    background-color: #DEC78E;
     color: #205167;
     font-weight: 200;
 }
@@ -55,4 +56,42 @@ header #plan{
     cursor: pointer;
     padding: 0.5rem 1rem;
     font-size: 1rem;
+}
+
+header #plan:hover{
+    color: #DEC78E;
+}
+
+main {
+    background: #DEC78E;
+    width: 100%;
+    max-height: auto;
+}
+
+main #questions_box {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    align-items: center;
+}
+
+main #questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+footer {
+    background: #205167 ;
+    color: #F0F0E8;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 0;
+    position: relative;
 }
