@@ -1,0 +1,2 @@
+User-agents: *
+Sitemap: https://escazure.github.io/eutravel.github.io/sitemap.xml
