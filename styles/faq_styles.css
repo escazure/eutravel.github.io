@@ -82,22 +82,28 @@ main {
 }
 
 main #questions_box {
-    width: auto;
-    height: auto;
+    width: 1000px;
+	height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-    padding-top: 100px;
-    padding-bottom: 60px;
+    justify-content: space-around;
+    margin-top: 75px;
     align-items: center;
+	align-self: center;
+	background-color: white;
+	border-top: 2px solid black;
+ 	border-left: 2px solid black;
+  	border-right: 2px solid black;
+
+  	border-top-left-radius: 20px;
+  	border-top-right-radius: 20px;
 }
 
 main #questions {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
 	font-size: 24px;
 }
 
