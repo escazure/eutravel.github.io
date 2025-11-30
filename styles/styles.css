@@ -11,6 +11,7 @@ header {
     padding: 0 5%;
     width: 100%;
     flex-grow: 0;
+    border: black solid 1.5px;
 }
 
 header #logo{
@@ -56,6 +57,8 @@ header #plan{
     cursor: pointer;
     padding: 0.5rem 1rem;
     font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
 }
 
 header #plan:hover{
@@ -65,27 +68,88 @@ header #plan:hover{
 main{
     background: #DEC78E;
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
+    flex-direction: column;
+    /* gap: 20px; */
     width: 100%;
     max-height: auto;
-    padding: 60px 20px 20px 20px;
+    padding: 60px 0px 0px 0px;
+    
+}
+
+#filler {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    overflow: hidden; 
+    text-align: center; 
+}
+
+#filler img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 0;
+}
+
+#filler .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+#filler .marketing {
+    position: relative; 
+    z-index: 2;
+    color: #F0F0E8;
+    font-size: 3rem;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+    margin-top: 0;
+    margin-bottom: 10px;
+    max-width: 90%;   
+}
+
+#add-marketing {
+    position: relative;
+    z-index: 2;
+    color: #F0F0E8;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    margin-bottom: 0;
+    max-width: 80%;  
+}
+
+
+#articles{
+    display: flex;
+    flex-direction: row;
+    margin-top:0;
+    /* gap:5px; */
+    border: black solid 1px;
 }
 
 #main-article{
     display: flex;
     flex-direction: column;
     flex: 1.5;
-    gap: 10px;
+    border-right: black solid 2px;
 }
 
 .other-articles {
-    flex: 1; /* narrower column */
+    flex: 1; 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
+    padding: 0;
 }
+
 
 .other-articles div {
     display: flex;
@@ -94,21 +158,21 @@ main{
 }
 
 main img {
-  width: 100%;        /* fill container width */
-  height: auto;       /* auto keeps proportions */
-  object-fit: cover;  /* or contain, depending on layout */
+  width: 100%;        
+  height: auto;       
+  object-fit: cover;  
 }
 
 
 .image-wrapper {
   position: relative;   
-  display: inline-block;
+  display: flex;
+  flex: 1;
   width: 100%;
   overflow: hidden;     
   border-radius: 6px;   
 }
 
-/* Make the image fill the container */
 .image-wrapper img {
   width: 100%;
   height: auto;
@@ -116,18 +180,22 @@ main img {
   object-fit: cover;
 }
 
-/* Headline text at the bottom of the image */
 .image-wrapper .headline {
   position: absolute;
   bottom: 10px;
   left: 15px;
+  text-align: left;
   color: #F0F0E8;
   font-size: 1.5rem;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
   margin: 0;
+
+  text-shadow:
+    0 0 5px rgba(0,0,0,1),
+    0 0 10px rgba(0,0,0,1),
+    -2px -2px 4px rgba(0,0,0,1);
 }
 
-/* Button at the top-right corner of the image */
+
 .image-wrapper #zw {
   position: absolute;
   top: 10px;
@@ -156,3 +224,5 @@ footer {
     flex-grow: 0;
     position: relative;
 }
+
+
