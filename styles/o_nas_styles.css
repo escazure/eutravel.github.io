@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@700&display=swap');
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: "Verdana", sans-serif; line-height: 1.6; color: #222; }
 
@@ -55,7 +57,14 @@ header #plan{
     cursor: pointer;
     padding: 0.5rem 1rem;
     font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
 }
+
+header #plan:hover{
+    color: #DEC78E;
+}
+
 
 main {
 	display: flex;
@@ -99,12 +108,23 @@ main {
     position: relative; 
     z-index: 2;
     color: #F0F0E8;
-    font-size: 3rem;
+    font-size: 2.4rem;
     text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
     margin-top: 0;
     margin-bottom: 10px;
     max-width: 90%;   
 }
+
+#add-marketing {
+    position: relative;
+    z-index: 2;
+    color: #F0F0E8;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    margin-bottom: 0;
+    max-width: 80%;  
+}
+
 
 main .info-container {
 	display: flex;
@@ -112,12 +132,15 @@ main .info-container {
 }
 
 main .info-container img {
-    height: 500px;
-    margin: 10px;
+    width: 50%;
+    max-height: auto;
+    flex-grow: 1;
 }
 
 main .inner-text {
-	margin: 10px;
+	padding: 10px;
+    font-size: 1.65rem;
+    font-family: 'Lato', sans-serif;
 }
 
 footer {
