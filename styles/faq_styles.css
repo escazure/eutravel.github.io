@@ -83,6 +83,7 @@ main {
 
 main #questions_box {
     width: 1000px;
+    padding: 40px 80px;
 	height: 100%;
     display: flex;
     flex-direction: column;
