@@ -1,5 +1,17 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: "Verdana", sans-serif; line-height: 1.6; color: #222; }
+
+html {
+	height: 100%;	
+}
+
+body { 
+	font-family: "Verdana", sans-serif; 
+	line-height: 1.6; 
+	color: #222;  
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
 
 header {
     position: absolute;
@@ -55,4 +67,85 @@ header #plan{
     cursor: pointer;
     padding: 0.5rem 1rem;
     font-size: 1rem;
+}
+
+header #plan:hover{
+    color: #DEC78E;
+}
+
+main {
+    background: #DEC78E;
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+main #info-box {
+    width: 1000px;
+    padding: 40px 80px;
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 75px;
+    align-items: center;
+	align-self: center;
+	background-color: white;
+	border-top: 2px solid black;
+ 	border-left: 2px solid black;
+  	border-right: 2px solid black;
+
+  	border-top-left-radius: 20px;
+  	border-top-right-radius: 20px;
+}
+
+main #forma{
+    border: 1px dashed black;
+    padding: 40px;
+    background-color: #FFE99F;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #forma-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+main #forma-subcontainer1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main #forma-subcontainer2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main #forma-subcontainer2 input{
+    height: 32px;
+}
+
+main #forma button{
+    font-size: 17px;
+    height: 25px;
+    width: 350px;
+    margin-top: 20px;
+    background-color: #205167;
+    color: #F0F0E8;
+}
+
+footer {
+    background: #205167 ;
+    color: #F0F0E8;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 0;
+    position: relative;
 }
