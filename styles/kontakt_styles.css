@@ -82,6 +82,7 @@ main {
 }
 
 main #info-box {
+	font-size: 20px;
     width: 1000px;
     padding: 40px 80px;
 	height: 100%;
@@ -101,7 +102,7 @@ main #info-box {
 }
 
 main #forma{
-    border: 1px dashed black;
+    border: 2px dashed black;
     padding: 40px;
     background-color: #FFE99F;
     font-size: 20px;
@@ -130,16 +131,28 @@ main #forma-subcontainer2 {
 
 main #forma-subcontainer2 input{
     height: 32px;
+	font-size: 15px;
+}
+
+main #forma-subcontainer2 textarea {
+	height: 60px;
+	font-size: 15px;
+	resize: none;
 }
 
 main #forma button{
     font-size: 17px;
-    height: 25px;
+    height: 30px;
     width: 350px;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: #205167;
     color: #F0F0E8;
 }
+
+main #forma button:hover{
+    color: #DEC78E;
+}
+
 
 footer {
     background: #205167 ;
