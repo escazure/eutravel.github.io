@@ -184,12 +184,12 @@ main {
     padding: 0 10px;  
 }
 
-#features{
+.features{
     position: relative;
     z-index: 2;
 }
 
-#features p {
+.features p {
     color: #F0F0E8;
     font-size: 1.3rem;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
@@ -197,7 +197,7 @@ main {
     text-align: center;
 }
 
-#features li {
+.features li {
     color: #F0F0E8;
     font-size: 1.1rem; 
     text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
@@ -206,7 +206,7 @@ main {
     position: relative;
 }
 
-#features li:before {
+.features li:before {
     content: "✓"; 
     position: absolute;
     left: 0;
