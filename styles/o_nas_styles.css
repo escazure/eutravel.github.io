@@ -129,6 +129,11 @@ main {
 main .info-container {
 	display: flex;
 	flex-direction: row;
+	gap: 20px;
+}
+
+main .info-container > div {
+	max-width: 1000px;
 }
 
 main .info-container img {
@@ -138,8 +143,9 @@ main .info-container img {
 
 main .inner-text {
 	padding: 10px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family: 'Lato', sans-serif;
+	line-height: 1.7;
 }
 
 footer {
